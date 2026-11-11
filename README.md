@@ -1,8 +1,8 @@
 # ChatApp
 
-**Messaging UI and application flow.**
+**A React chat interface connected to a small Express authentication proxy.**
 
-`Communication · Software` · `See project files` · Repository reference
+`React · Vite · Express · ChatEngine` · `JavaScript` · Repository reference
 
 ---
 
@@ -12,15 +12,31 @@ A code for a chat messaging app like Whatsapp, Messenger, Instagram, etc.
 
 ## Run or inspect locally
 
-Inspect the checked-in files for the appropriate runtime. Not all repositories have a one-command start script.
+**Backend (terminal 1)**
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+**Frontend (terminal 2)**
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The backend listens on port 3001 and uses the ChatEngine API. Configure your own service credentials through environment variables before using a real account; this historical source should not be treated as production-ready authentication.
 
 ## Repository contents
 
 | Item | What it represents |
 |:--|:--|
 | [`README.md`](./README.md) | Project documentation |
-| [`backend`](./backend) | Project file or module |
-| [`frontend`](./frontend) | Project file or module |
+| [`backend/`](./backend/) | Express API and authentication endpoint |
+| [`frontend/`](./frontend/) | Vite + React chat UI |
 
 ## How to evaluate
 
